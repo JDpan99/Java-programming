@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salesreport">
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="TableStatic" layoutX="11.0" layoutY="11.0" prefHeight="357.0" prefWidth="441.0" style="-fx-background-color: #b1daff;">
+              <columns>
+                <TableColumn fx:id="pdtname" prefWidth="89.59997749328613" text="Product_Name" />
+                <TableColumn fx:id="pdtprice" prefWidth="84.79998016357422" text="Price" />
+                  <TableColumn fx:id="pdtRemain" prefWidth="89.5999755859375" text="Remain" />
+                  <TableColumn fx:id="pdtSold" prefWidth="89.5999755859375" text="Sold" />
+                  <TableColumn fx:id="pdtSales" prefWidth="89.5999755859375" text="Sales(RM)" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnPrint" layoutX="129.0" layoutY="451.0" mnemonicParsing="false" onAction="#onClickPrint" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #0589ff;" text="Print Statement" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutX="297.0" layoutY="451.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #0589ff;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblTotalRevenue" layoutX="25.0" layoutY="378.0" prefHeight="26.0" prefWidth="146.0" text="Revenue          :" textFill="#0598ff">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtfRevenue" layoutX="172.0" layoutY="379.0" prefHeight="28.0" prefWidth="178.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="285.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lbltxt1" layoutX="75.0" layoutY="155.0" text="Product" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="39.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbltxt2" layoutX="75.0" layoutY="228.0" text="Statics" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

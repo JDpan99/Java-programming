@@ -1,0 +1,5 @@
+sprite, 9.9, 10
+100plus, 9.9, 7
+lemon_tea, 9.9, 3
+Cincau, 9.9, 2
+jasmine, 9.9, 2

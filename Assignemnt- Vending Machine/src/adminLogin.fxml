@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminlogin">
+   <left>
+      <AnchorPane fx:id="paneBackG1" prefHeight="500.0" prefWidth="381.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitle" layoutX="74.0" layoutY="250.0" text="Product Management" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="paneBackG2" prefHeight="500.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtUsername" layoutX="92.0" layoutY="203.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="pwdPassword" layoutX="92.0" layoutY="256.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="btnLogin" layoutX="114.0" layoutY="321.0" mnemonicParsing="false" onAction="#onClickLogin" prefHeight="37.0" prefWidth="89.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReturn" layoutX="222.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickReturn" prefHeight="37.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="Back" textFill="#0598ff">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblADTitle" layoutX="104.0" layoutY="143.0" text="Admin Login" textFill="#0598ff">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUsername" layoutX="92.0" layoutY="185.0" text="USERNAME               :" textFill="#0598ff">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPassword" layoutX="92.0" layoutY="241.0" text="PASSWORD               :" textFill="#0598ff">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="rqMention" layoutX="83.0" layoutY="284.0" text="*">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
